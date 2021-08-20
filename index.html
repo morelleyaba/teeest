@@ -1,0 +1,27 @@
+<script type="text/javascript">
+
+//<![CDATA[
+
+function valider(frm){
+  if(frm.elements['prenom'].value != "") {
+    return true;
+  }
+  else {
+    alert("Saisissez le prénom");
+    return false;
+  }
+}
+
+//]]>
+</script>
+
+<form onsubmit="return valider(this)" id="frmSaisie" …>
+<p>
+
+<label for="prenom">Saisissez votre prénom :</label>
+<input type="text" name="prenom" id="prenom" />
+<input type="button" value="Afficher" onclick="afficher(this.form)" />
+<input type="submit" value="Ok" />
+
+</p>
+</form>
